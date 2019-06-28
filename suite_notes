@@ -1,0 +1,107 @@
+wget -m http://google.com     design copy from website
+"use strict"       -->  first line for  debugger in js
+window.location.href="http://google.com"                ->  redirected
+debugger           ->in js is same as die or return in php
+for(key in objname1)
+{   objname1[x]}
+
+js not support assoc array Key=>value but support key=>value in object 
+settimeout(function(){//logic//},3000);
+var a=settimeout(file1,3000,'a','b');                   a=parameter of given fn   
+                                                        file1=defined in another place
+                                                        
+
+
+https://top10onlinecourses.com 
+
+
+
+
+
+in rest api -----
+                 1. get_entry    -----> fot id=>""                     uniqe result
+                 2. query=>"select * from ......." ------>             multiple result
+
+
+nano -> command for create file and open in linuxe
+
+permisson of folder 
+sudo su
+cd /var/www/html
+chmod _R 777 foldername
+
+
+jeetendra@outrightcrm.com
+Jeetendra@1234#
+
+dont reploy modele in module builder all cstm _c table remove with custum views 
+admin->configure module menu filter 
+module->subpanel-> relationship views
+studio->expport cistumisation ->   zipwill create(select all custum module tick)
+
+
+outright_run_sql($query);
+admin->dignostic->select log file type and dowload it 
+
+
+
+change data type->
+custum->ext->module->{m1}->ext->varderfs->{name}->    $dictnory='datatype'
+                                                      $dictnory='textfield'
+
+
+
+
+add menupage in wordpress ony change theme/fn file in wp  addmenu and addaction  
+
+workflow->email notification sender->$url for current link 
+custum->module->{name_module}->logichooks.php
+custum->module->{name_module}->hookname.php
+array(1,hookname,path,classname,fn_name)
+audit -> privious updated dat will show 
+inline edit-> edit single item in pencil icon list view
+required-> not saved * nessasry to fill 
+
+
+wordpress end json url ->folder/index.php/wp-json/wp/v2/post
+wordpress end json url ->folder/index.php/wp-json/wp/v2/post/{updatepostid}
+
+
+wordpress ask for ftp in local->  chown _R www -datafolder name
+
+
+html_entity_decode(<h1>hi</h1>)   -> if data not storing in sanme formata 
+
+
+
+
+wp==
+             pos/page->     write html css js as normally but php(php using plug in )
+
+ony change theme/fn file in wp 
+create form action of any php file outside wp folder and perform action like otp /any custum task 
+
+
+
+acces data base in wordpress studenttutorialpoint
+
+
+
+require_once('/wp_config');
+global $wpdb;
+$wpdb->insert('table1',array('key=>value,key1=>value2,'))
+getheader();
+getfooter();
+
+
+run a cron job in linuxe sever ::::::
+sudo crontab -e -u www-data
+*    *    *    *    *     cd /var/www/html/suite1; php -f cron.php > /dev/null 2>&1 
+
+
+https://alanstorm.com/sugar_crm_hello_world/
+html to wordpress theme
+
+
+
+
