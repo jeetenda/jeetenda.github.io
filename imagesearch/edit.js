@@ -29,7 +29,7 @@ function download() {
   download();
   var canvas = new fabric.Canvas('canvas1');
   //      `${param1var}`
-canvas.setBackgroundImage('https://images.unsplash.com/photo-1534361960057-19889db9621e?ixlib', canvas.renderAll.bind(canvas));
+canvas.setBackgroundImage(str, canvas.renderAll.bind(canvas));
 alert(param1var);
 $('.add_shape').click(function(){
 	var cur_value = $(this).attr('data-rel');
