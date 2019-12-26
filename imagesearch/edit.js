@@ -15,6 +15,7 @@ var str = window.location.href;
 var res = str.replace("https://jeetenda.github.io/imagesearch/edit_image.html?img=", "");
 );
 
+alert(str);
 alert(res);
 
 
@@ -28,9 +29,9 @@ function download() {
   }
   download();
   var canvas = new fabric.Canvas('canvas1');
-  //      `${param1var}`
+ 
 canvas.setBackgroundImage(res, canvas.renderAll.bind(canvas));
-alert(param1var);
+
 $('.add_shape').click(function(){
 	var cur_value = $(this).attr('data-rel');
 	if(cur_value!='')
