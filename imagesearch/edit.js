@@ -1,5 +1,5 @@
 var param1var = getQueryVariable("img");
-var param2var = window.location.href;
+
 alert(param2var);
 function getQueryVariable(variable) {
   var query = window.location.search.substring(1);
@@ -12,6 +12,13 @@ function getQueryVariable(variable) {
   } 
   
 }
+
+var str = window.location.href;
+var res = str.replace("https://jeetenda.github.io/imagesearch/edit_image.html?img=", "");
+
+
+
+
 function download() {
   var download = document.getElementById("download");
   var image = document.getElementById("canvas1").toDataURL("image/png")
