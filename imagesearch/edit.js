@@ -1,6 +1,4 @@
-var param1var = getQueryVariable("img");
-
-alert(param2var);
+var param1var = getQueryVariable("img"
 function getQueryVariable(variable) {
   var query = window.location.search.substring(1);
   var vars = query.split("&");
@@ -15,7 +13,9 @@ function getQueryVariable(variable) {
 
 var str = window.location.href;
 var res = str.replace("https://jeetenda.github.io/imagesearch/edit_image.html?img=", "");
+);
 
+alert(res);
 
 
 
@@ -29,7 +29,7 @@ function download() {
   download();
   var canvas = new fabric.Canvas('canvas1');
   //      `${param1var}`
-canvas.setBackgroundImage(str, canvas.renderAll.bind(canvas));
+canvas.setBackgroundImage(res, canvas.renderAll.bind(canvas));
 alert(param1var);
 $('.add_shape').click(function(){
 	var cur_value = $(this).attr('data-rel');
