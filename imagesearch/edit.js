@@ -14,8 +14,8 @@
 var str = window.location.href;
 var res = str.replace("https://jeetenda.github.io/imagesearch/edit_image.html?img=", "");
 
-alert(str);
-alert(res);
+// alert(str);
+// alert(res);
 
 
 
