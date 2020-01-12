@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+<div class="container">
+  <h2>Login form</h2>
+   <div class="form-group">
+      <label for="email">Email:</label><span id="email_error" style="display: none;background: red;color: white;">email is required</span>
+      <input type="email" class="form-control" id="email" >
+    </div>
+    <div class="form-group">
+      <label for="pwd">Password:</label><span id="password_error" style="display: none;background: red;color: white;">password is required</span>
+      <input type="password" class="form-control" id="pwd" >
+    </div>
+    <button  class="btn btn-default" id="login" >Submit</button>
+  </form>
+</div>
+
+</body>
+</html>
+<script>
+
+
+
+var element = document.getElementById("login");
+//console.log(element);
+var validation= element.addEventListener("click", validation);
+
+function validation()
+{
+    var error=0;
+    var email = document.getElementById("email").value;
+    if(email==""){document.getElementById("email_error").style.display='inline'; error++;}
+    var pwd = document.getElementById("pwd").value;
+    if(pwd==""){document.getElementById("password_error").style.display='inline';error++;}
+    
+    if(error==0) 
+    {
+
+//console.log('hhj');
+// $.ajax({
+//     url: "https://reqres.in/api/login",
+//     type: "POST",
+//     data: {
+//     email: email,
+//     password: pwd
+
+//     },
+//     success: function(response){
+//     console.log(response);
+//     }
+
+// });
+
+
+fetch('https://reqres.in/api/login', {
+            method: 'POST',
+            headers: {
+                'Content-type': 'application/json',
+            },
+             body: JSON.stringify({
+                  email: email,
+                  password: pwd
+            })
+        }) /*end fetch */
+        .then(results => results.json())
+        .then(data => {
+            
+            
+            
+            sessionStorage.setItem("token_login",1);
+            //window.location = "dashboard.html";
+            
+            })
+
+    
+    }
+}
+/////////////////////////////////////
+console.log(validation);
+</script>
