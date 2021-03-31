@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<style>
+.myProgress {
+  width: 100%;
+  background-color: #ddd;
+  border-radius: 25px;
+}
+
+.myBar {
+border-radius: 25px;
+  width: 50%;
+  height: 30px;
+  
+}
+body{background-color: grey;}
+</style>
+<body><br>
+<div class="myProgress" >
+  <div class="myBar" id ="myBar" style="background-color: green;"><span style="margin-left:95%">50%</span></div>
+</div>
+<br>
+<div class="myProgress">
+  <div class="myBar"  style="background-color: red;"><span style="margin-left:90%">50%</span></div>
+</div>
+<br>
+<div class="myProgress">
+  <div class="myBar" style="background-color: white;"><span style="margin-left:90%">50%</span></div>
+</div>
+<br>
+<div class="myProgress">
+  <div class="myBar" style="background-color: blue;"><span style="margin-left:90%">50%</span></div>
+</div>
+
+<br>
+<div class="myProgress">
+  <div class="myBar" style="background-color: yellow;"><span style="margin-left:90%">50%</span></div>
+</div>
+
+<br>
+<button onclick="move()">Finish</button> 
+
+<script>var i = 0;
+function move() {
+  if (i == 0) {
+    i = 1;
+    var elem = document.getElementById("myBar");
+    var width = 1;
+    var id = setInterval(frame, 10);
+    function frame() {
+      if (width >= 100) {
+        clearInterval(id);
+        i = 0;
+      } else {
+        width++;
+        elem.style.width = width + "%";
+      }
+    }
+  }
+}
+</script>
+
+</body>
+</html>
